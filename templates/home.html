@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}CDA-DL{% endblock %}
+{% block content %}          
+<div class="container-fluid h-50 mainDiv">
+    <!--2-8-2-->
+    <div class="row align-self-center">
+        <div class="col-lg-2 itemF"></div>
+        
+        <div class="col-lg-8 itemF">
+
+            <h1  style="margin-top: 3vh; font-weight: 600; color: rgb(140, 99, 99);">CDA SCRAPPER &nbsp; &nbsp;<i class="fas fa-download" style="color: rgb(66, 141, 116);"></i></h1>
+
+            <div class="d-flex justify-content-center">
+            <div class="form-inline col-lg-8" style="margin-top: 5vh;">
+                <form class="col-lg-12 center-block" method="POST" role="form" action="/">
+                    <textarea class="form-control" name='textareaInput' id="pasteArea" rows="1" placeholder="CDA LINK" style="text-align: center; min-width: 100%"></textarea>
+              
+                    <button class="btn btn-primary mb-2">GET</button>
+                </form>
+            </div>
+            </div>
+
+            {% if dlReady %}
+                <button type="button" class="btn btn-success" style="margin-top: 10vh;" onclick="window.location.href='{{generatedLink}}'">{{title}}</button>
+            {% else %}
+            <button type="button" class="btn btn-danger">{{title}}</button>
+            {% endif %}
+            
+        </div>
+
+        
+        
+        <div class="col-lg-2 itemF"></div>
+
+       
+    </div> 
+
+</div>
+{% endblock %}
