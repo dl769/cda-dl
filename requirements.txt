@@ -12,6 +12,7 @@ fire==0.4.0
 Flask==1.1.2
 Flask-Cors==3.0.10
 Flask-Session==0.3.2
+gunicorn==19.10.0
 idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.3
