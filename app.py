@@ -131,6 +131,5 @@ def getBestQuality(url):
     else:
         return 'error'
 
-app.config.from_object(__name__)
-app.debug = True
-app.run()
+
+app.run(host="0.0.0.0")
