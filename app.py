@@ -4,7 +4,7 @@ from array import *
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
 import os
-driverPath = 'C:/php'
+
 CHROMEDRIVER_PATH = os.environ.get('CHROMEDRIVER_PATH', '/usr/local/bin/chromedriver')
 GOOGLE_CHROME_BIN = os.environ.get('GOOGLE_CHROME_BIN', '/usr/bin/google-chrome')
 app = Flask(__name__)
