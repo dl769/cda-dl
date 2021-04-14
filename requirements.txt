@@ -25,6 +25,7 @@ pyquery==1.4.3
 pytz==2021.1
 pywebcopy==6.3.0
 requests==2.25.1
+gunicorn==19.10.0
 selenium==3.141.0
 six==1.15.0
 soupsieve==2.2.1
