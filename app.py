@@ -47,11 +47,11 @@ def getUrl(url):
         )
         gDriver.get(url)
         #print(gDriver.page_source)
-        gDriver.close()
         
         #GET_URL
         pSrc = gDriver.page_source
-    
+        gDriver.close()
+        
         x = pSrc.find('.mp4')
         a = x - 125                         #~~url
         b = x + 4                           #.mp4 => +4
@@ -88,10 +88,10 @@ def getBestQuality(url):
         )
         gDriver.get(url)
         #print(gDriver.page_source)
-        gDriver.close()
     
         pSrc = gDriver.page_source
-    
+        gDriver.close()
+
         ssP = pSrc.find('class="quality-txt"')
         ssK = ssP + 650                                               
         print(ssP)
