@@ -73,7 +73,7 @@ def getUrl(url):
             return data
         
         except WebDriverException:
-            print("failed to start driver at path: " + driverPath)
+            print("failed to start driver at path:yyy")
             return 'error'
     
     else:
@@ -103,7 +103,7 @@ def getBestQuality(url):
             return '480p'
         
         except WebDriverException:
-            print("failed to start driver at path: " + driverPath)
+            print("failed to start driver at path: xxx")
             return 'error'
     
     else:
